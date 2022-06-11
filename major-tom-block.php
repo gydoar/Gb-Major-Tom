@@ -1,11 +1,14 @@
 <?php
+
 /**
  * Plugin Name:       Major Tom Block
+ * Plugin URI:        https://andrevega.com
  * Description:       Example static block scaffolded with Create Block tool.
  * Requires at least: 5.9
  * Requires PHP:      7.0
  * Version:           0.1.0
- * Author:            The WordPress Contributors
+ * Author:            Andrés Vega
+ * Author URI:        https://andrevega.com
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       major-tom-block
@@ -20,7 +23,8 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_major_tom_block_block_init() {
-	register_block_type( __DIR__ . '/build' );
+function create_block_major_tom_block_block_init()
+{
+	register_block_type(__DIR__ . '/build');
 }
-add_action( 'init', 'create_block_major_tom_block_block_init' );
+add_action('init', 'create_block_major_tom_block_block_init');
